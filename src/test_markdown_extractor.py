@@ -1,10 +1,6 @@
 import unittest
-from inline_markdown import (
-    split_nodes_delimiter,
-)
-
+from split_nodes import split_nodes_delimiter
 from textnode import TextNode, TextType
-
 
 class TestInlineMarkdown(unittest.TestCase):
     def test_delim_bold(self):
@@ -85,7 +81,6 @@ class TestInlineMarkdown(unittest.TestCase):
             ],
             new_nodes,
         )
-
 
 if __name__ == "__main__":
     unittest.main()
